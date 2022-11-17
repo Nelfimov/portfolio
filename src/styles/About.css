@@ -2,3 +2,35 @@
   text-align: center;
   font-size: 2rem;
 }
+
+#about>div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#about div.tech {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  row-gap: 10px;
+  justify-items: center;
+}
+
+#about div.stack {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  justify-items: center;
+}
+
+#about img.tech-icon {
+  width: 48px;
+  height: auto;
+}
+
+#about p.tech-label {
+  text-align: center;
+  margin: 0;
+  color: black;
+  font-weight: 300;
+  font-size: 14px;
+}
