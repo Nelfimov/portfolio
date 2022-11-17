@@ -1,11 +1,27 @@
 header {
-  padding: 20px 150px;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 65rem;
+  margin-inline: auto;
   background-color: transparent;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 
 header nav {
   display: flex;
@@ -32,6 +48,7 @@ header.menu {
 
   header>.menu {
     display: flex;
+    flex-flow: column nowrap;
   }
 
   .menu li {

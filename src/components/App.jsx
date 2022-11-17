@@ -1,9 +1,16 @@
+import React from 'react';
+import Intro from './Intro';
+import About from './About';
 import '../styles/App.css';
 
 const App = () => {
   return (
-    <div className="App">
-    </div>
+    <main>
+      <div className="App">
+        <Intro />
+        <About />
+      </div>
+    </main>
   );
 };
 
