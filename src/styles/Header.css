@@ -11,6 +11,11 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  z-index: 7;
+}
+
+header.scrolled {
+  color: white
 }
 
 header a {
@@ -25,7 +30,14 @@ header a:visited {
 
 header nav {
   display: flex;
-  gap: 0 1rem;
+}
+
+header nav a {
+  padding: 5px;
+}
+
+header nav a.active {
+  background-color: grey;
 }
 
 header.menu {

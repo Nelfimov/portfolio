@@ -15,19 +15,19 @@ import nodeIcon from '../images/icons/nodejs.svg';
 import '../styles/About.css';
 
 const TECH_LIST = [
-  {src: bootstrapIcon, label: 'Bootstrap'},
+  {src: htmlIcon, label: 'HTML'},
   {src: cssIcon, label: 'CSS'},
+  {src: jsIcon, label: 'Javascript'},
+  {src: reactIcon, label: 'React'},
+  {src: jestIcon, label: 'Jest'},
+  {src: npmIcon, label: 'npm'},
+  {src: nodeIcon, label: 'Node'},
+  {src: webpackIcon, label: 'Webpack'},
+  {src: bootstrapIcon, label: 'Bootstrap'},
+  {src: pythonIcon, label: 'Python'},
   {src: djangoIcon, label: 'Django'},
   {src: gitIcon, label: 'Git'},
-  {src: htmlIcon, label: 'HTML'},
-  {src: jestIcon, label: 'Jest'},
-  {src: jsIcon, label: 'Javascript'},
   {src: nginxIcon, label: 'Nginx'},
-  {src: npmIcon, label: 'npm'},
-  {src: pythonIcon, label: 'Python'},
-  {src: reactIcon, label: 'React'},
-  {src: webpackIcon, label: 'Webpack'},
-  {src: nodeIcon, label: 'Node'},
 ];
 
 const About = () => {
@@ -50,6 +50,7 @@ const About = () => {
           ))}
         </div>
       </div>
+      <hr />
     </section>
   );
 };

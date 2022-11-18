@@ -1,14 +1,16 @@
 import React from 'react';
-import Intro from './Intro';
+import Hero from './Hero';
 import About from './About';
+import Projects from './Projects';
 import '../styles/App.css';
 
 const App = () => {
   return (
     <main>
       <div className="App">
-        <Intro />
+        <Hero />
         <About />
+        <Projects />
       </div>
     </main>
   );
