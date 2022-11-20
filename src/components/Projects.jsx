@@ -5,7 +5,7 @@ import '../styles/Projects.css';
 
 const Projects = () => {
   const handleScroll = () => {
-    const projects = document.getElementById('projects');
+    const projects = document.querySelector('section.projects');
     const rect = projects.getBoundingClientRect();
 
     if (rect.top >= 0 && rect.bottom <=
@@ -19,7 +19,8 @@ const Projects = () => {
   window.addEventListener('touchmove', handleScroll);
 
   return (
-    <section id='projects'>
+    <section className='projects'>
+      <a className='anchor' id='projects'></a>
       <h1>My projects</h1>
       <div className="card-container">
         {PROJECT_LIST.map((project) => (
@@ -29,10 +30,10 @@ const Projects = () => {
               <h3>{project.name}</h3>
               <div className="stack">
 
-                {project.stack.split(' ').map((tech) => (
-                  <img key={tech}
-                    src={ICONS_LIST[tech].src}
-                    alt={tech}
+                {project.stack.split(' ').map((item) => (
+                  <img key={item}
+                    src={ICONS_LIST['tech'][item].src}
+                    alt={item}
                     className='tech-icon small'
                   />
                 ))}

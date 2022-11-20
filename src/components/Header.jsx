@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import '../styles/Header.css';
-import menuIcon from '../images/menu.svg';
+import ICONS_LIST from '../icons.json';
 
 const NAV_LINKS = [
   {href: '#hero', text: 'me'},
@@ -15,7 +15,7 @@ const Header = () => {
   const handleScrollHeader = () => {
     const top = window.scrollY;
     const header = document.querySelector('header');
-    if (top > 100) {
+    if (top > 50) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
@@ -65,7 +65,7 @@ const Header = () => {
         ))}
       </nav>
       <div className="menu">
-        <img src={menuIcon} alt="menu" onClick={handleClick} />
+        <img src={ICONS_LIST.general.menu} alt="menu" onClick={handleClick} />
         <ul className="hidden" ref={menu}>
           <li><a href="#about" aria-label='about'></a></li>
           <li><a href="https://github.com/Nelfimov" aria-label='github link'>Github</a></li>

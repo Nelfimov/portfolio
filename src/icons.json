@@ -1,66 +1,71 @@
 {
-  "html": {
-    "label": "HTML",
-    "src": "/images/icons/html.svg"
+  "general": {
+    "menu": "/images/icons/menu.svg"
   },
-  "css": {
-    "label": "CSS",
-    "src": "/images/icons/css.svg"
-  },
-  "javascript": {
-    "label": "Javascript",
-    "src": "/images/icons/js.svg"
-  },
-  "react": {
-    "label": "React",
-    "src": "/images/icons/react.svg"
-  },
-  "jest": {
-    "label": "Jest",
-    "src": "/images/icons/jest.svg"
-  },
-  "firebase": {
-    "label": "Firebase",
-    "src": "/images/icons/firebase.svg"
-  },
-  "node": {
-    "label": "Node.js",
-    "src": "/images/icons/nodejs.svg"
-  },
-  "npm": {
-    "label": "npm",
-    "src": "/images/icons/npm.svg"
-  },
-  "django": {
-    "label": "Django",
-    "src": "/images/icons/django.svg"
-  },
-  "drf": {
-    "label": "Django Rest",
-    "src": "/images/icons/drf.png"
-  },
-  "python": {
-    "label": "Python",
-    "src": "/images/icons/python.svg"
-  },
-  "nginx": {
-    "label": "Nginx",
-    "src": "/images/icons/nginx.svg"
-  },
-  "sqlite": {
-    "label": "SQLite",
-    "src": "/images/icons/sqlite.svg"
-  },
-  "bootstrap": {
-    "label": "Bootstrap",
-    "src": "/images/icons/bootstrap.svg"
-  },
-  "webpack": {
-    "label": "Webpack",
-    "src": "/images/icons/webpack.svg"
-  },
-  "git": {
-    "label": "Git",
-    "src": "/images/icons/git.svg"
+  "tech": {
+    "html": {
+      "label": "HTML",
+      "src": "/images/icons/html.svg"
+    },
+    "css": {
+      "label": "CSS",
+      "src": "/images/icons/css.svg"
+    },
+    "javascript": {
+      "label": "Javascript",
+      "src": "/images/icons/js.svg"
+    },
+    "react": {
+      "label": "React",
+      "src": "/images/icons/react.svg"
+    },
+    "jest": {
+      "label": "Jest",
+      "src": "/images/icons/jest.svg"
+    },
+    "firebase": {
+      "label": "Firebase",
+      "src": "/images/icons/firebase.svg"
+    },
+    "node": {
+      "label": "Node.js",
+      "src": "/images/icons/nodejs.svg"
+    },
+    "npm": {
+      "label": "npm",
+      "src": "/images/icons/npm.svg"
+    },
+    "django": {
+      "label": "Django",
+      "src": "/images/icons/django.svg"
+    },
+    "drf": {
+      "label": "Django Rest",
+      "src": "/images/icons/drf.png"
+    },
+    "python": {
+      "label": "Python",
+      "src": "/images/icons/python.svg"
+    },
+    "nginx": {
+      "label": "Nginx",
+      "src": "/images/icons/nginx.svg"
+    },
+    "sqlite": {
+      "label": "SQLite",
+      "src": "/images/icons/sqlite.svg"
+    },
+    "bootstrap": {
+      "label": "Bootstrap",
+      "src": "/images/icons/bootstrap.svg"
+    },
+    "webpack": {
+      "label": "Webpack",
+      "src": "/images/icons/webpack.svg"
+    },
+    "git": {
+      "label": "Git",
+      "src": "/images/icons/git.svg"
+    }
   }
 }

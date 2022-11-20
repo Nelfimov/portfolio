@@ -5,7 +5,8 @@ import '../styles/Hero.css';
 
 const Hero = () => {
   return (
-    <section id="hero">
+    <section className="hero">
+      <a className='anchor' id='hero'></a>
       <div className="name">
         <h1>Nikita</h1>
         <h1>Elfimov</h1>

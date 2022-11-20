@@ -1,15 +1,15 @@
-#projects {
+section.projects {
   visibility: hidden;
   opacity: 0;
   transition: visibility 1.5s, opacity 1.5s;
 }
 
-#projects.active {
+section.projects.active {
   opacity: 1;
   visibility: visible;
 }
 
-#projects .card div.stack {
+section.projects .card div.stack {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -17,24 +17,24 @@
   gap: 2px;
 }
 
-#projects .card img.tech-icon.small {
+section.projects .card img.tech-icon.small {
   width: 30px;
 }
 
-#projects h1 {
+section.projects h1 {
   text-align: center;
   font-size: 2rem;
 }
 
-#projects .card-container {
+section.projects .card-container {
   position: relative;
   display: grid;
-  height: 90vh;
+  height: 70vh;
   place-items: start center;
   top: 10%
 }
 
-#projects .card {
+section.projects .card {
   position: absolute;
   background-color: white;
   border: 1px solid black;
@@ -44,49 +44,49 @@
   transition: transform .5s ease-out;
 }
 
-#projects .card>a {
+section.projects .card>a {
   height: 100%;
   display: grid;
   grid-template-rows: min-content;
   align-items: baseline;
 }
 
-#projects .card h3 {
+section.projects .card h3 {
   text-align: center;
   font-size: 1.5rem;
 }
 
-#projects .card>a>img {
+section.projects .card>a>img {
   width: 100%;
   border: 1px solid grey;
 }
 
-#projects .card:nth-child(2) {
+section.projects .card:nth-child(2) {
   transform: translateX(3%) rotate(-5deg);
 }
 
-#projects .card:nth-child(3) {
+section.projects .card:nth-child(3) {
   transform: translateX(-3%) rotate(5deg);
 }
 
-#projects .card:nth-child(4) {
+section.projects .card:nth-child(4) {
   transform: translateX(6%) rotate(7deg);
 }
 
-#projects:hover .card:nth-child(2) {
+section.projects:hover .card:nth-child(2) {
   transform: translateX(-100%) rotate(-15deg);
 }
 
-#projects:hover .card:nth-child(3) {
+section.projects:hover .card:nth-child(3) {
   transform: translateX(100%) rotate(25deg);
 }
 
-#projects:hover .card:nth-child(4) {
+section.projects:hover .card:nth-child(4) {
   transform: translate(0, 100%) rotate(5deg);
 }
 
-#projects a,
-#projects a:visited {
+section.projects a,
+section.projects a:visited {
   text-decoration: none;
   color: inherit;
 }

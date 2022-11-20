@@ -4,7 +4,7 @@ import ICONS_LIST from '../icons.json';
 
 const About = () => {
   const handleScroll = () => {
-    const about = document.getElementById('about');
+    const about = document.querySelector('section.about');
     const rect = about.getBoundingClientRect();
 
     if (rect.top >= 0 && rect.bottom <=
@@ -18,7 +18,8 @@ const About = () => {
   window.addEventListener('touchmove', handleScroll);
 
   return (
-    <section id='about'>
+    <section className='about'>
+      <a className='anchor' id='about'></a>
       <h1>About me</h1>
       <div>
         <p>
@@ -28,13 +29,13 @@ const About = () => {
           learning in parallel <a href="https://theodinproject.com">The Odin Project</a>.
         </p>
         <div className="tech">
-          {Object.keys(ICONS_LIST).map((item, index) => (
+          {Object.keys(ICONS_LIST['tech']).map((item, index) => (
             <div className="stack" key={index}>
               <img
-                src={ICONS_LIST[item].src}
-                alt={ICONS_LIST[item].label}
+                src={ICONS_LIST['tech'][item].src}
+                alt={ICONS_LIST['tech'][item].label}
                 className="tech-icon" />
-              <p className="tech-label">{ICONS_LIST[item].label}</p>
+              <p className="tech-label">{ICONS_LIST['tech'][item].label}</p>
             </div>
           ))}
         </div>

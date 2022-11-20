@@ -1,56 +1,56 @@
-#about {
+section.about {
   visibility: hidden;
   opacity: 0;
   transition: visibility 1.5s, opacity 1.5s;
 }
 
-#about.active {
+section.about.active {
   opacity: 1;
   visibility: visible;
 }
 
-#about>h1 {
+section.about>h1 {
   text-align: center;
   font-size: 2rem;
 }
 
-#about>div {
+section.about>div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-#about div.tech {
+section.about div.tech {
   display: grid;
   grid-template-columns: repeat(5, auto);
   row-gap: 10px;
   justify-items: center;
 }
 
-#about div.stack {
+section.about div.stack {
   display: grid;
   grid-template-rows: 1fr min-content;
   justify-items: center;
 }
 
-#about.active div.stack:nth-child(2n - 1) {
+section.about.active div.stack:nth-child(2n - 1) {
   animation: fadeInDropDown 1.2s ease-out;
 }
 
-#about.active div.stack:nth-child(2n) {
+section.about.active div.stack:nth-child(2n) {
   animation: fadeInDropDown .9s ease-out;
 }
 
-#about.active div.stack:nth-child(3n) {
+section.about.active div.stack:nth-child(3n) {
   animation: fadeInDropDown 1.5s ease-out;
 }
 
-#about img.tech-icon {
+section.about img.tech-icon {
   width: 48px;
   height: auto;
 }
 
-#about .tech-label {
+section.about .tech-label {
   text-align: center;
   margin: 0;
   font-weight: 300;
