@@ -9,6 +9,18 @@
   visibility: visible;
 }
 
+#projects .card div.stack {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  gap: 2px;
+}
+
+#projects .card img.tech-icon.small {
+  width: 30px;
+}
+
 #projects h1 {
   text-align: center;
   font-size: 2rem;
@@ -17,8 +29,9 @@
 #projects .card-container {
   position: relative;
   display: grid;
-  height: 60vh;
-  place-items: center;
+  height: 90vh;
+  place-items: start center;
+  top: 10%
 }
 
 #projects .card {
@@ -43,33 +56,33 @@
   font-size: 1.5rem;
 }
 
-#projects .card img {
+#projects .card>a>img {
   width: 100%;
   border: 1px solid grey;
 }
 
 #projects .card:nth-child(2) {
-  transform: translateX(3%) rotate(-10deg);
+  transform: translateX(3%) rotate(-5deg);
 }
 
 #projects .card:nth-child(3) {
-  transform: translateX(-3%) rotate(10deg);
+  transform: translateX(-3%) rotate(5deg);
 }
 
 #projects .card:nth-child(4) {
-  transform: translateX(6%) rotate(20deg);
+  transform: translateX(6%) rotate(7deg);
 }
 
 #projects:hover .card:nth-child(2) {
-  transform: translateX(-100%) rotate(-10deg);
+  transform: translateX(-100%) rotate(-15deg);
 }
 
 #projects:hover .card:nth-child(3) {
-  transform: translateX(100%) rotate(10deg);
+  transform: translateX(100%) rotate(25deg);
 }
 
 #projects:hover .card:nth-child(4) {
-  transform: translateX(50%) translateX(50%) rotate(20deg);
+  transform: translate(0, 100%) rotate(5deg);
 }
 
 #projects a,

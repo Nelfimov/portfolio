@@ -1,32 +1,7 @@
 import React from 'react';
-import waldoScreenshot from '../images/projects/waldo280.png';
-import ecommerceScreenshot from '../images/projects/ecommerce280.png';
-import battleshipScreenshot from '../images/projects/battleship280.png';
-import todoScreenshot from '../images/projects/todo280.png';
+import PROJECT_LIST from '../projects.json';
+import ICONS_LIST from '../icons.json';
 import '../styles/Projects.css';
-
-const PROJECT_LIST = [
-  {
-    name: 'Ecommerce shop',
-    thumbnail: ecommerceScreenshot,
-    href: 'http://217.25.237.151/',
-  },
-  {
-    name: 'Where is Waldo game',
-    thumbnail: waldoScreenshot,
-    href: 'https://nelfimov.github.io/odin-phototaggingapp/',
-  },
-  {
-    name: 'Battleship game',
-    thumbnail: battleshipScreenshot,
-    href: 'https://nelfimov.github.io/odin-battleship/',
-  },
-  {
-    name: 'Todo app',
-    thumbnail: todoScreenshot,
-    href: 'https://nelfimov.github.io/odin-todoapp/',
-  },
-];
 
 const Projects = () => {
   const handleScroll = () => {
@@ -47,11 +22,22 @@ const Projects = () => {
     <section id='projects'>
       <h1>My projects</h1>
       <div className="card-container">
-        {PROJECT_LIST.map((item, index) => (
-          <div className="card" key={index}>
-            <a href={item.href}>
-              <img src={item.thumbnail} alt={item.name} />
-              <h3>{item.name}</h3>
+        {PROJECT_LIST.map((project) => (
+          <div className="card" key={project.id}>
+            <a href={project.href}>
+              <img src={project.src} alt={project.name} />
+              <h3>{project.name}</h3>
+              <div className="stack">
+
+                {project.stack.split(' ').map((tech) => (
+                  <img key={tech}
+                    src={ICONS_LIST[tech].src}
+                    alt={tech}
+                    className='tech-icon small'
+                  />
+                ))}
+
+              </div>
             </a>
           </div>
         ))}
