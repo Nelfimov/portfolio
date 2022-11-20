@@ -1,0 +1,15 @@
+{
+  "bootstrap": "./bootstrap.svg",
+  "css": "./css.svg",
+  "django": "./django.svg",
+  "git": "./git.svg",
+  "html": "./html.svg",
+  "jest": "./jest.svg",
+  "js": "./js.svg",
+  "nginx": "./nginx.svg",
+  "nodejs": "./nodejs.svg",
+  "npm": "./npm.svg",
+  "python": "./python.svg",
+  "react": "./react.svg",
+  "webpack": "./webpack.svg"
+}

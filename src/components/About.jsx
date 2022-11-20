@@ -31,6 +31,20 @@ const TECH_LIST = [
 ];
 
 const About = () => {
+  const handleScroll = () => {
+    const about = document.getElementById('about');
+    const rect = about.getBoundingClientRect();
+
+    if (rect.top >= 0 && rect.bottom <=
+      (window.innerHeight + about.offsetHeight / 3)) {
+      about.classList.add('active');
+    };
+  };
+
+  window.addEventListener('load', handleScroll);
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('touchmove', handleScroll);
+
   return (
     <section id='about'>
       <h1>About me</h1>
@@ -50,7 +64,6 @@ const About = () => {
           ))}
         </div>
       </div>
-      <hr />
     </section>
   );
 };

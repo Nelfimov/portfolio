@@ -18,7 +18,6 @@ const Hero = () => {
         <source media="(max-width: 800px)" srcSet={hero400} />
         <img src={hero800} alt="profile" />
       </picture>
-      <hr />
     </section>
   );
 };

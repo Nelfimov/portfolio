@@ -12,19 +12,17 @@ const NAV_LINKS = [
 const Header = () => {
   const menu = useRef();
 
-  window.onscroll = () => {
-    // Header
+  const handleScrollHeader = () => {
     const top = window.scrollY;
     const header = document.querySelector('header');
-    if (top > 50) {
+    if (top > 100) {
       header.classList.add('scrolled');
-      document.body.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
-      document.body.classList.remove('scrolled');
     };
+  };
 
-    // Header nav linkds
+  const handleScrollHeaderLinks = () => {
     const nav = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('section');
 
@@ -48,6 +46,11 @@ const Header = () => {
     });
   };
 
+  window.addEventListener('scroll', () => {
+    handleScrollHeader();
+    handleScrollHeaderLinks();
+  });
+
   const handleClick = (e) => {
     menu.current.classList.toggle('hidden');
     e.target.classList.toggle('click');
@@ -55,7 +58,7 @@ const Header = () => {
 
   return (
     <header>
-      <span><a href="/" aria-label='home'>LOGO</a></span>
+      <span><a href="/" aria-label='home'>My portfolio</a></span>
       <nav>
         {NAV_LINKS.map((item, index) => (
           <a key={index} href={item.href} aria-label={item.text}>{item.text}</a>

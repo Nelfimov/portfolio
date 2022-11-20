@@ -1,4 +1,79 @@
+#projects {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1.5s, opacity 1.5s;
+}
+
+#projects.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 #projects h1 {
   text-align: center;
   font-size: 2rem;
+}
+
+#projects .card-container {
+  position: relative;
+  display: grid;
+  height: 60vh;
+  place-items: center;
+}
+
+#projects .card {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  width: 350px;
+  box-shadow: 2px 2px 2px 2px grey;
+  transition: transform .5s ease-out;
+}
+
+#projects .card>a {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content;
+  align-items: baseline;
+}
+
+#projects .card h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#projects .card img {
+  width: 100%;
+  border: 1px solid grey;
+}
+
+#projects .card:nth-child(2) {
+  transform: translateX(3%) rotate(-10deg);
+}
+
+#projects .card:nth-child(3) {
+  transform: translateX(-3%) rotate(10deg);
+}
+
+#projects .card:nth-child(4) {
+  transform: translateX(6%) rotate(20deg);
+}
+
+#projects:hover .card:nth-child(2) {
+  transform: translateX(-100%) rotate(-10deg);
+}
+
+#projects:hover .card:nth-child(3) {
+  transform: translateX(100%) rotate(10deg);
+}
+
+#projects:hover .card:nth-child(4) {
+  transform: translateX(50%) translateX(50%) rotate(20deg);
+}
+
+#projects a,
+#projects a:visited {
+  text-decoration: none;
+  color: inherit;
 }

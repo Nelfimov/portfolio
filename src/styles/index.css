@@ -10,19 +10,23 @@ body {
   color: rgb(42, 42, 42);
 }
 
-body.scrolled {
+body.dark {
   background-color: rgb(32, 32, 32);
 }
 
-body.scrolled *,
-body.scrolled p {
+body.dark *,
+body.dark p {
   color: rgb(227, 227, 227);
 }
 
-body.scrolled img.tech-icon {
+body.dark img.tech-icon {
   filter: invert();
 }
 
 * {
   scroll-behavior: smooth;
+}
+
+p {
+  margin: 0;
 }
