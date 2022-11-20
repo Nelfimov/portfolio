@@ -76,6 +76,6 @@ section.about .tech-label {
 
   section.about>div {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
   }
 }

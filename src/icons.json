@@ -1,6 +1,7 @@
 {
   "general": {
-    "menu": "/images/icons/menu.svg"
+    "menu": "/images/icons/menu.svg",
+    "github": "/images/icons/github.svg"
   },
   "tech": {
     "html": {

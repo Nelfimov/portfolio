@@ -18,3 +18,8 @@ footer a:visited {
   text-decoration: none;
   color: white;
 }
+
+footer img {
+  filter: invert();
+  width: 48px;
+}

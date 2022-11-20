@@ -90,4 +90,15 @@ section.hero img {
   }
 }
 
-@media (max-width: 500px) {}
+@media (max-width: 800px) {
+  section.hero {
+    height: 90vw;
+  }
+
+  section.hero div.info {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+  }
+}
