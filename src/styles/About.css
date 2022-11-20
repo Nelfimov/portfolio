@@ -1,7 +1,7 @@
 section.about {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 1.5s, opacity 1.5s;
+  transition: visibility 1.5s 1s, opacity 1.5s 1s;
 }
 
 section.about.active {
@@ -29,7 +29,7 @@ section.about div.tech {
 
 section.about div.stack {
   display: grid;
-  grid-template-rows: 1fr min-content;
+  grid-template-rows: auto;
   justify-items: center;
 }
 
@@ -66,5 +66,16 @@ section.about .tech-label {
   to {
     opacity: 100;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  section.about p {
+    font-size: 1rem;
+  }
+
+  section.about>div {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 }

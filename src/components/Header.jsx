@@ -24,6 +24,7 @@ const Header = () => {
 
   const handleScrollHeaderLinks = () => {
     const nav = document.querySelectorAll('nav a');
+    const menu = document.querySelectorAll('.menu a');
     const sections = document.querySelectorAll('section');
 
     sections.forEach((i) => {
@@ -33,13 +34,17 @@ const Header = () => {
       const offset = i.offsetTop - 50;
       // Length of the sections
       const height = i.offsetHeight;
-      const id = i.getAttribute('id');
+      const id = i.getAttribute('class').split(' ')[0];
 
       if (top >= offset && top < offset + height) {
         nav.forEach((link) => {
           link.classList.remove('active');
-          document
-              .querySelector('header nav a[href*=' + id + ']')
+          document.querySelector('header nav a[href*=' + id + ']')
+              .classList.add('active');
+        });
+        menu.forEach((link) => {
+          link.classList.remove('active');
+          document.querySelector('header .menu a[href*=' + id + ']')
               .classList.add('active');
         });
       }
@@ -52,7 +57,7 @@ const Header = () => {
   });
 
   const handleClick = (e) => {
-    menu.current.classList.toggle('hidden');
+    menu.current.classList.toggle('active');
     e.target.classList.toggle('click');
   };
 
@@ -66,9 +71,16 @@ const Header = () => {
       </nav>
       <div className="menu">
         <img src={ICONS_LIST.general.menu} alt="menu" onClick={handleClick} />
-        <ul className="hidden" ref={menu}>
-          <li><a href="#about" aria-label='about'></a></li>
-          <li><a href="https://github.com/Nelfimov" aria-label='github link'>Github</a></li>
+        <ul className="" ref={menu}>
+          {NAV_LINKS.map((item, index) => (
+            <li key={index}>
+              <a
+                key={index}
+                href={item.href}
+                aria-label={item.text}>{item.text}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </header>

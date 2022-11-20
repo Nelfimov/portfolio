@@ -9,7 +9,7 @@ const Projects = () => {
     const rect = projects.getBoundingClientRect();
 
     if (rect.top >= 0 && rect.bottom <=
-      (window.innerHeight + projects.offsetHeight / 3)) {
+      (window.innerHeight + projects.offsetHeight / 1.5)) {
       projects.classList.add('active');
     };
   };

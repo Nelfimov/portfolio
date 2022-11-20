@@ -8,7 +8,7 @@ const About = () => {
     const rect = about.getBoundingClientRect();
 
     if (rect.top >= 0 && rect.bottom <=
-      (window.innerHeight + about.offsetHeight / 3)) {
+      (window.innerHeight + about.offsetHeight / 1.5)) {
       about.classList.add('active');
     };
   };
