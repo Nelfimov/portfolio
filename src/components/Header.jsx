@@ -70,7 +70,11 @@ const Header = () => {
         ))}
       </nav>
       <div className="menu">
-        <img src={ICONS_LIST.general.menu} alt="menu" onClick={handleClick} />
+        <img
+          src={`${process.env.PUBLIC_URL}${ICONS_LIST.general.menu}`}
+          alt="menu"
+          onClick={handleClick}
+        />
         <ul className="" ref={menu}>
           {NAV_LINKS.map((item, index) => (
             <li key={index}>

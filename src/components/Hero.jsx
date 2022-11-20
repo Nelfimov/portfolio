@@ -15,7 +15,10 @@ const Hero = () => {
         <h2>Developer</h2>
       </div>
       <picture>
-        <source media="(max-width: 800px)" srcSet={HEROES_LIST[400]} />
+        <source
+          media="(max-width: 800px)"
+          srcSet={`${process.env.PUBLIC_URL}${HEROES_LIST[400]}`}
+        />
         <img
           src={`${process.env.PUBLIC_URL}${HEROES_LIST[800]}`}
           alt="profile"
