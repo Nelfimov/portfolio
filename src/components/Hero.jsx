@@ -16,7 +16,10 @@ const Hero = () => {
       </div>
       <picture>
         <source media="(max-width: 800px)" srcSet={HEROES_LIST[400]} />
-        <img src={HEROES_LIST[800]} alt="profile" />
+        <img
+          src={`${process.env.PUBLIC_URL}${HEROES_LIST[800]}`}
+          alt="profile"
+        />
       </picture>
     </section>
   );

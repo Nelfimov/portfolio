@@ -26,13 +26,17 @@ const Projects = () => {
         {PROJECT_LIST.map((project) => (
           <div className="card" key={project.id}>
             <a href={project.href}>
-              <img src={project.src} alt={project.name} />
+              <img
+                src={`${process.env.PUBLIC_URL}${project.src}`}
+                alt={project.name} />
               <h3>{project.name}</h3>
               <div className="stack">
 
                 {project.stack.split(' ').map((item) => (
                   <img key={item}
-                    src={ICONS_LIST['tech'][item].src}
+                    src={
+                      `${process.env.PUBLIC_URL}${ICONS_LIST['tech'][item].src}`
+                    }
                     alt={item}
                     className='tech-icon small'
                   />

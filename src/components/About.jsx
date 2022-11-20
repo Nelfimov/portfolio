@@ -47,7 +47,7 @@ const About = () => {
           {Object.keys(ICONS_LIST['tech']).map((item, index) => (
             <div className="stack" key={index}>
               <img
-                src={ICONS_LIST['tech'][item].src}
+                src={`${process.env.PUBLIC_URL}${ICONS_LIST['tech'][item].src}`}
                 alt={ICONS_LIST['tech'][item].label}
                 className="tech-icon" />
               <p className="tech-label">{ICONS_LIST['tech'][item].label}</p>
