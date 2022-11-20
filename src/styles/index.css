@@ -29,6 +29,7 @@ body.dark img.tech-icon {
 
 p {
   margin: 0;
+  font-size: 20px;
 }
 
 a.anchor {
@@ -36,4 +37,8 @@ a.anchor {
   position: relative;
   top: -100px;
   visibility: hidden;
+}
+
+section {
+  padding-bottom: 20px;
 }
