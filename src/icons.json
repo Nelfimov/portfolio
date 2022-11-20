@@ -1,71 +1,71 @@
 {
   "general": {
-    "menu": "/images/icons/menu.svg"
+    "menu": "./images/icons/menu.svg"
   },
   "tech": {
     "html": {
       "label": "HTML",
-      "src": "/images/icons/html.svg"
+      "src": "./images/icons/html.svg"
     },
     "css": {
       "label": "CSS",
-      "src": "/images/icons/css.svg"
+      "src": "./images/icons/css.svg"
     },
     "javascript": {
       "label": "Javascript",
-      "src": "/images/icons/js.svg"
+      "src": "./images/icons/js.svg"
     },
     "react": {
       "label": "React",
-      "src": "/images/icons/react.svg"
+      "src": "./images/icons/react.svg"
     },
     "jest": {
       "label": "Jest",
-      "src": "/images/icons/jest.svg"
+      "src": "./images/icons/jest.svg"
     },
     "firebase": {
       "label": "Firebase",
-      "src": "/images/icons/firebase.svg"
+      "src": "./images/icons/firebase.svg"
     },
     "node": {
       "label": "Node.js",
-      "src": "/images/icons/nodejs.svg"
+      "src": "./images/icons/nodejs.svg"
     },
     "npm": {
       "label": "npm",
-      "src": "/images/icons/npm.svg"
+      "src": "./images/icons/npm.svg"
     },
     "django": {
       "label": "Django",
-      "src": "/images/icons/django.svg"
+      "src": "./images/icons/django.svg"
     },
     "drf": {
       "label": "Django Rest",
-      "src": "/images/icons/drf.png"
+      "src": "./images/icons/drf.png"
     },
     "python": {
       "label": "Python",
-      "src": "/images/icons/python.svg"
+      "src": "./images/icons/python.svg"
     },
     "nginx": {
       "label": "Nginx",
-      "src": "/images/icons/nginx.svg"
+      "src": "./images/icons/nginx.svg"
     },
     "sqlite": {
       "label": "SQLite",
-      "src": "/images/icons/sqlite.svg"
+      "src": "./images/icons/sqlite.svg"
     },
     "bootstrap": {
       "label": "Bootstrap",
-      "src": "/images/icons/bootstrap.svg"
+      "src": "./images/icons/bootstrap.svg"
     },
     "webpack": {
       "label": "Webpack",
-      "src": "/images/icons/webpack.svg"
+      "src": "./images/icons/webpack.svg"
     },
     "git": {
       "label": "Git",
-      "src": "/images/icons/git.svg"
+      "src": "./images/icons/git.svg"
     }
   }
 }

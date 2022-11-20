@@ -2,28 +2,28 @@
   {
     "id": "1",
     "name": "Ecommerce shop",
-    "src": "/images/projects/ecommerce280.png",
+    "src": "./images/projects/ecommerce280.png",
     "href": "http://217.25.237.151/",
     "stack": "django python drf javascript sqlite html css"
   },
   {
     "id": "2",
     "name": "Where is Waldo game",
-    "src": "/images/projects/waldo280.png",
+    "src": "./images/projects/waldo280.png",
     "href": "https://nelfimov.github.io/odin-phototaggingapp/",
     "stack": "react firebase html css"
   },
   {
     "id": "3",
     "name": "Battleship game",
-    "src": "/images/projects/battleship280.png",
+    "src": "./images/projects/battleship280.png",
     "href": "https://nelfimov.github.io/odin-battleship/",
     "stack": "javascript html css webpack"
   },
   {
     "id": "4",
     "name": "Todo app",
-    "src": "/images/projects/todo280.png",
+    "src": "./images/projects/todo280.png",
     "href": "https://nelfimov.github.io/odin-todoapp/",
     "stack": "javascript html css webpack"
   }
