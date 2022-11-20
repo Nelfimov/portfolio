@@ -1,6 +1,5 @@
 import React from 'react';
-import hero400 from '../images/hero/hero_400.jpg';
-import hero800 from '../images/hero/hero_800.jpg';
+import HEROES_LIST from '../heroes.json';
 import '../styles/Hero.css';
 
 const Hero = () => {
@@ -16,8 +15,8 @@ const Hero = () => {
         <h2>Developer</h2>
       </div>
       <picture>
-        <source media="(max-width: 800px)" srcSet={hero400} />
-        <img src={hero800} alt="profile" />
+        <source media="(max-width: 800px)" srcSet={HEROES_LIST[400]} />
+        <img src={HEROES_LIST[800]} alt="profile" />
       </picture>
     </section>
   );
