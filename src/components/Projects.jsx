@@ -1,30 +1,42 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import PROJECT_LIST from '../projects.json';
 import ICONS_LIST from '../icons.json';
 import '../styles/Projects.css';
 
 const Projects = () => {
-  const handleScroll = () => {
-    const projects = document.querySelector('section.projects');
-    const rect = projects.getBoundingClientRect();
+  const card1 = useRef(null);
+  const card2 = useRef(null);
+  const card3 = useRef(null);
+  const card4 = useRef(null);
 
-    if (rect.top >= 0 && rect.bottom <=
-      (window.innerHeight + projects.offsetHeight / 1.5)) {
-      projects.classList.add('active');
+  const cardList = [card1, card2, card3, card4];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+      if (entry.isIntersecting) {
+        console.log(entry.target);
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      };
+    }, {
+      rootMargin: '0px 0px -100px 0px',
+    });
+
+    cardList.forEach((card) => observer.observe(card.current));
+
+    return () => {
+      cardList.forEach((card) => observer.unobserve(card.current));
     };
-  };
-
-  window.addEventListener('load', handleScroll);
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('touchmove', handleScroll);
+  }, []);
 
   return (
     <section className='projects'>
       <a className='anchor' id='projects'></a>
       <h1>My projects</h1>
       <div className="card-container">
-        {PROJECT_LIST.map((project) => (
-          <div className="card" key={project.id}>
+        {PROJECT_LIST.map((project, index) => (
+          <div className="card" key={project.id} ref={cardList[index]}>
             <a href={project.href}>
               <img
                 src={`${process.env.PUBLIC_URL}${project.src}`}

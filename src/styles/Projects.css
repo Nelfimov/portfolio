@@ -1,14 +1,3 @@
-section.projects {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 1.5s, opacity 1.5s;
-}
-
-section.projects.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 section.projects .card div.stack {
   display: grid;
   justify-content: center;
@@ -94,8 +83,6 @@ section.projects .card>a>img {
   section.projects div.card-container {
     position: static;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     grid-auto-flow: row;
     gap: 20px;
     height: 100%;
@@ -104,5 +91,25 @@ section.projects .card>a>img {
   section.projects div.card-container div.card {
     width: 95%;
     position: static;
+  }
+
+  section.projects .card:first-of-type {
+    transform: translateX(-100%) rotate(-50deg);
+  }
+
+  section.projects .card:nth-of-type(2) {
+    transform: translateX(100%) rotate(30deg);
+  }
+
+  section.projects .card:nth-of-type(3) {
+    transform: translateX(-100%) rotate(-20deg);
+  }
+
+  section.projects .card:nth-of-type(4) {
+    transform: translateX(100%) rotate(40deg);
+  }
+
+  section.projects .card.active {
+    transform: translateX(0) rotate(0);
   }
 }
