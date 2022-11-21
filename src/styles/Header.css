@@ -1,5 +1,5 @@
 header {
-  padding: 1.5rem;
+  padding: .5rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,12 +16,16 @@ header {
 header>span {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 header.scrolled {
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+header img {
+  width: 24px;
 }
 
 header.scrolled img {
@@ -59,7 +63,7 @@ header .menu {
 
 @media (max-width: 500px) {
   header {
-    padding: 12px 24px;
+    padding: 10px 24px;
   }
 
   header>nav {

@@ -1,6 +1,5 @@
 main {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 4rem 0;
   max-width: 70rem;
   width: 100%;
   margin-inline: auto;
@@ -8,4 +7,10 @@ main {
 
 hr {
   width: 100%;
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 3rem 0;
+  }
 }
