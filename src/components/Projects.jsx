@@ -4,18 +4,12 @@ import ICONS_LIST from '../icons.json';
 import '../styles/Projects.css';
 
 const Projects = () => {
-  const card1 = useRef(null);
-  const card2 = useRef(null);
-  const card3 = useRef(null);
-  const card4 = useRef(null);
-
-  const cardList = [card1, card2, card3, card4];
+  const cardContainer = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
       if (entry.isIntersecting) {
-        console.log(entry.target);
         entry.target.classList.add('active');
         observer.unobserve(entry.target);
       };
@@ -23,20 +17,20 @@ const Projects = () => {
       rootMargin: '0px 0px -100px 0px',
     });
 
-    cardList.forEach((card) => observer.observe(card.current));
+    const cards = [...cardContainer.current.children];
 
-    return () => {
-      cardList.forEach((card) => observer.unobserve(card.current));
-    };
+    cards.forEach((card) => observer.observe(card));
+
+    return () => cards.forEach((card) => observer.unobserve(card));
   }, []);
 
   return (
     <section className='projects'>
       <a className='anchor' id='projects'></a>
       <h1>My projects</h1>
-      <div className="card-container">
+      <div className="card-container" ref={cardContainer}>
         {PROJECT_LIST.map((project, index) => (
-          <div className="card" key={project.id} ref={cardList[index]}>
+          <div className="card" key={project.id}>
             <a href={project.href}>
               <img
                 src={`${process.env.PUBLIC_URL}${project.src}`}
