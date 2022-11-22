@@ -26,5 +26,19 @@
     "src": "/images/projects/todo.png",
     "href": "https://nelfimov.github.io/odin-todoapp/",
     "stack": "javascript html css webpack"
+  },
+  {
+    "id": "5",
+    "name": "Memory card game",
+    "src": "/images/projects/memory.png",
+    "href": "https://nelfimov.github.io/odin-memory-card/",
+    "stack": "react html css"
+  },
+  {
+    "id": "6",
+    "name": "Tic-tac-toe game",
+    "src": "/images/projects/tictactoe.png",
+    "href": "https://nelfimov.github.io/odin-tictactoe/",
+    "stack": "javascript html css"
   }
 ]

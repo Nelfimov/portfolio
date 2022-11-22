@@ -110,7 +110,7 @@ nav.menu {
     background-color: rgba(36, 36, 36);
     padding: 0;
     margin: 0;
-    z-index: 7;
+    z-index: 6;
   }
 
   nav.menu.active {
@@ -127,7 +127,7 @@ nav.menu {
     position: fixed;
     height: 100%;
     width: 100vw;
-    z-index: 6;
+    z-index: 5;
     left: 0;
   }
 
