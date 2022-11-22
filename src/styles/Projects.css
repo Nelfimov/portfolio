@@ -98,7 +98,7 @@ section.projects .card>a>img {
   }
 
   section.projects .card:nth-of-type(2) {
-    transform: translateX(100%) rotate(30deg);
+    transform: translateX(-100%) rotate(30deg);
   }
 
   section.projects .card:nth-of-type(3) {
@@ -106,7 +106,7 @@ section.projects .card>a>img {
   }
 
   section.projects .card:nth-of-type(4) {
-    transform: translateX(100%) rotate(40deg);
+    transform: translateX(-100%) rotate(40deg);
   }
 
   section.projects .card.active {
