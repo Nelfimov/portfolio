@@ -1,5 +1,6 @@
 import React from 'react';
-import HEROES_LIST from '../heroes.json';
+// import HEROES_LIST from '../heroes.json';
+import ProgressiveImage from './ProgressiveImage';
 import '../styles/Hero.css';
 
 const Hero = () => {
@@ -16,16 +17,7 @@ const Hero = () => {
           <h2>Developer</h2>
         </div>
       </div>
-      <picture>
-        <source
-          media="(max-width: 800px)"
-          srcSet={`${process.env.PUBLIC_URL}${HEROES_LIST[400]}`}
-        />
-        <img
-          src={`${process.env.PUBLIC_URL}${HEROES_LIST[800]}`}
-          alt="profile"
-        />
-      </picture>
+      <ProgressiveImage />
     </section>
   );
 };

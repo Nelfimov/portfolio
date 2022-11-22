@@ -1,4 +1,6 @@
 {
   "400": "/images/hero/hero_400.jpg",
-  "800": "/images/hero/hero_800.jpg"
+  "400_low": "/images/hero/hero_400_low.jpg",
+  "800": "/images/hero/hero_800.jpg",
+  "800_low": "/images/hero/hero_800_low.jpg"
 }

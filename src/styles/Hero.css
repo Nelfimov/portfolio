@@ -64,6 +64,21 @@ section.hero img {
   max-width: 100%;
   object-fit: contain;
   width: min(70vw, 800px);
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 0;
+  animation: slideInFromRight .7s ease-out;
+}
+
+section.hero img.loading {
+  filter: blur(20px);
+  clip-path: inset(0);
+}
+
+section.hero img.loaded {
+  filter: blur(0px);
+  transition: filter .5s linear;
 }
 
 @keyframes slideInFromLeft {
