@@ -17,6 +17,16 @@ const Header = () => {
     e.target.classList.toggle('click');
   };
 
+  const handleScroll = () => {
+    const top = window.scrollY;
+    const header = document.querySelector('header');
+    if (top > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    };
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -37,6 +47,8 @@ const Header = () => {
 
     const anchors = document.querySelectorAll('section');
     anchors.forEach((anchor) => observer.observe(anchor));
+
+    window.addEventListener('scroll', handleScroll);
   }, []);
 
   return (

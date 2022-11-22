@@ -72,7 +72,7 @@ header .menu {
   header .menu ul {
     visibility: hidden;
     position: absolute;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     transition: transform .5s ease-in-out;
   }
 
@@ -83,7 +83,7 @@ header .menu {
     z-index: 7;
   }
 
-  .menu li {
+  header .menu li {
     color: white;
     list-style: none;
     padding: 5px;
@@ -97,6 +97,6 @@ header .menu {
     visibility: visible;
     flex-flow: column nowrap;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
+    z-index: 7;
   }
 }

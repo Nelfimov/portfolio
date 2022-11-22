@@ -31,7 +31,6 @@ const ProgressiveImage = () => {
 
   handleResize();
 
-
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     window.addEventListener('load', handleResize);
