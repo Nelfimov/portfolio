@@ -1,14 +1,3 @@
-section.about {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 1.5s 1s, opacity 1.5s 1s;
-}
-
-section.about.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 section.about>h1 {
   text-align: center;
   font-size: 2rem;
@@ -18,6 +7,17 @@ section.about>div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+section.about>div>p,
+section.about>div .stack {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+section.about .active {
+  opacity: 1;
 }
 
 section.about div.tech {
@@ -33,16 +33,16 @@ section.about div.stack {
   justify-items: center;
 }
 
-section.about.active div.stack:nth-child(2n - 1) {
-  animation: fadeInDropDown 1.2s ease-out;
+section.about .active div.stack:nth-child(2n - 1) {
+  animation: fadeInDropDown 1.2s .5s ease-out forwards;
 }
 
-section.about.active div.stack:nth-child(2n) {
-  animation: fadeInDropDown .9s ease-out;
+section.about .active div.stack:nth-child(2n) {
+  animation: fadeInDropDown .9s .5s ease-out forwards;
 }
 
-section.about.active div.stack:nth-child(3n) {
-  animation: fadeInDropDown 1.5s ease-out;
+section.about .active div.stack:nth-child(3n) {
+  animation: fadeInDropDown 1.5s .5s ease-out forwards;
 }
 
 section.about img.tech-icon {

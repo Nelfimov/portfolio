@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect} from 'react';
 import '../styles/Header.css';
 import ICONS_LIST from '../icons.json';
 
@@ -12,54 +12,32 @@ const NAV_LINKS = [
 const Header = () => {
   const menu = useRef();
 
-  const handleScrollHeader = () => {
-    const top = window.scrollY;
-    const header = document.querySelector('header');
-    if (top > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    };
-  };
-
-  const handleScrollHeaderLinks = () => {
-    const nav = document.querySelectorAll('nav a');
-    const menu = document.querySelectorAll('.menu a');
-    const sections = document.querySelectorAll('section');
-
-    sections.forEach((i) => {
-      // Length or number of pixels the viewport has been scrolled
-      const top = window.scrollY;
-      // Length of the element from the top of the viewport
-      const offset = i.offsetTop - 50;
-      // Length of the sections
-      const height = i.offsetHeight;
-      const id = i.getAttribute('class').split(' ')[0];
-
-      if (top >= offset && top < offset + height) {
-        nav.forEach((link) => {
-          link.classList.remove('active');
-          document.querySelector('header nav a[href*=' + id + ']')
-              .classList.add('active');
-        });
-        menu.forEach((link) => {
-          link.classList.remove('active');
-          document.querySelector('header .menu a[href*=' + id + ']')
-              .classList.add('active');
-        });
-      }
-    });
-  };
-
-  window.addEventListener('scroll', () => {
-    handleScrollHeader();
-    handleScrollHeaderLinks();
-  });
-
   const handleClick = (e) => {
     menu.current.classList.toggle('active');
     e.target.classList.toggle('click');
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const target = document
+              .querySelector(`nav a[href*=${entry.target.classList[0]}]`);
+          target.classList.add('active');
+        } else {
+          const target = document
+              .querySelector(`nav a[href*=${entry.target.classList[0]}]`);
+          target.classList.remove('active');
+        };
+      });
+    }, {
+      rootMargin: '-200px 0px',
+      threshold: .5,
+    });
+
+    const anchors = document.querySelectorAll('section');
+    anchors.forEach((anchor) => observer.observe(anchor));
+  }, []);
 
   return (
     <header>

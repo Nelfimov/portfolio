@@ -1,27 +1,35 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import '../styles/About.css';
 import ICONS_LIST from '../icons.json';
 
 const About = () => {
-  const handleScroll = () => {
-    const about = document.querySelector('section.about');
-    const rect = about.getBoundingClientRect();
+  const div = useRef(null);
 
-    if (rect.top >= 0 && rect.bottom <=
-      (window.innerHeight + about.offsetHeight / 1.5)) {
-      about.classList.add('active');
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.4,
+    });
+
+    const children = [...div.current.children];
+    children.forEach((child) => observer.observe(child));
+
+    return () => {
+      children.forEach((child) => observer.unobserve(child));
     };
-  };
-
-  window.addEventListener('load', handleScroll);
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('touchmove', handleScroll);
+  }, []);
 
   return (
     <section className='about'>
       <a className='anchor' id='about'></a>
       <h1>About me</h1>
-      <div>
+      <div ref={div}>
         <p>
           A radiophysics student currently employed as Procurement Manager
           passionately learning Web Development.
