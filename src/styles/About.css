@@ -12,7 +12,7 @@ section.about>div {
 section.about>div>p,
 section.about>div .stack {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 1s .5s;
 }
 
 

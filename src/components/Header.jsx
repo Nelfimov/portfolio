@@ -10,11 +10,15 @@ const NAV_LINKS = [
 ];
 
 const Header = () => {
-  const menu = useRef();
+  const menu = useRef(null);
+  const header = useRef(null);
 
   const handleClick = (e) => {
     menu.current.classList.toggle('active');
     e.target.classList.toggle('click');
+    if (!header.current.classList.contains('scrolled')) {
+      header.current.classList.add('scrolled');
+    }
   };
 
   const handleScroll = () => {
@@ -31,13 +35,19 @@ const Header = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const target = document
-              .querySelector(`nav a[href*=${entry.target.classList[0]}]`);
-          target.classList.add('active');
+          document
+              .querySelector(`nav.links a[href*=${entry.target.classList[0]}]`)
+              .classList.add('active');
+          document
+              .querySelector(`nav.menu a[href*=${entry.target.classList[0]}]`)
+              .classList.add('active');
         } else {
-          const target = document
-              .querySelector(`nav a[href*=${entry.target.classList[0]}]`);
-          target.classList.remove('active');
+          document
+              .querySelector(`nav.links a[href*=${entry.target.classList[0]}]`)
+              .classList.remove('active');
+          document
+              .querySelector(`nav.menu a[href*=${entry.target.classList[0]}]`)
+              .classList.remove('active');
         };
       });
     }, {
@@ -52,32 +62,39 @@ const Header = () => {
   }, []);
 
   return (
-    <header>
-      <span><a href="/" aria-label='home'>My portfolio</a></span>
-      <nav>
-        {NAV_LINKS.map((item, index) => (
-          <a key={index} href={item.href} aria-label={item.text}>{item.text}</a>
-        ))}
-      </nav>
-      <div className="menu">
-        <img
-          src={`${process.env.PUBLIC_URL}${ICONS_LIST.general.menu}`}
-          alt="menu"
-          onClick={handleClick}
-        />
-        <ul className="" ref={menu}>
+    <>
+      <header ref={header}>
+        <span><a href="/" aria-label='home'>
+          My portfolio
+        </a></span>
+        <nav className='links'>
+          {NAV_LINKS.map((item, index) => (
+            <a key={index}
+              href={item.href}
+              aria-label={item.text}>{item.text}</a>
+          ))}
+        </nav>
+        <div className="menu-button">
+          <img
+            src={`${process.env.PUBLIC_URL}${ICONS_LIST.general.menu}`}
+            alt="menu"
+            onClick={handleClick}
+          />
+        </div>
+      </header>
+      <nav className='menu' ref={menu}>
+        <ul>
           {NAV_LINKS.map((item, index) => (
             <li key={index}>
-              <a
-                key={index}
-                href={item.href}
-                aria-label={item.text}>{item.text}
+              <a href={item.href} aria-label={item.text}>
+                {item.text}
               </a>
             </li>
           ))}
         </ul>
-      </div>
-    </header>
+      </nav>
+      <div className="overlay" />
+    </>
   );
 };
 
