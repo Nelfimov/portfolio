@@ -1,0 +1,119 @@
+:root {
+  --background: rgba(188, 188, 188, 0.4);
+  --outline-text: 0 0 2px rgb(226, 226, 226), 0 0 2px rgb(226, 226, 226), 0 0 2px rgb(226, 226, 226), 0 0 2px rgb(226, 226, 226);
+}
+
+section.hero {
+  position: relative;
+}
+
+section.hero .name {
+  animation: slideInFromLeft .7s ease-out;
+  position: relative;
+  z-index: 1;
+  background-color: var(--background);
+}
+
+section.hero .prof {
+  position: relative;
+  z-index: 1;
+  background-color: var(--background);
+  animation: slideInFromRight 1s ease-out;
+}
+
+section.hero h1,
+section.hero h2 {
+  font-size: min(10vw, 7rem);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+  text-shadow: var(--outline-text);
+}
+
+section.hero h1:first-of-type {
+  margin-left: 2%;
+}
+
+section.hero h1:nth-of-type(2) {
+  margin-left: 5%;
+}
+
+section.hero h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+section.hero h2:first-of-type {
+  margin-left: 25%;
+}
+
+section.hero h2:nth-of-type(2) {
+  margin-left: 30%;
+}
+
+section.hero picture {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 0;
+  animation: slideInFromRight .7s ease-out;
+}
+
+section.hero img {
+  max-width: 100%;
+  object-fit: contain;
+  width: min(70vw, 800px);
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 0;
+  animation: slideInFromRight .7s ease-out;
+}
+
+section.hero img.loading {
+  filter: blur(20px);
+  clip-path: inset(0);
+}
+
+section.hero img.loaded {
+  filter: blur(0px);
+  transition: filter .5s linear;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(+100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  section.hero {
+    height: 90vw;
+  }
+
+  section.hero div.info {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+  }
+}

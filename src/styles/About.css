@@ -1,0 +1,83 @@
+section.about > h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+section.about > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+section.about > div > p,
+section.about > div .stack {
+  opacity: 0;
+  transition: opacity 1s 0.5s;
+}
+
+section.about .active {
+  opacity: 1;
+}
+
+section.about div.tech {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  row-gap: 10px;
+  justify-items: center;
+}
+
+section.about div.stack {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+section.about .active div.stack:nth-child(2n - 1) {
+  animation: fadeInDropDown 1.2s 0.5s ease-out forwards;
+}
+
+section.about .active div.stack:nth-child(2n) {
+  animation: fadeInDropDown 0.9s 0.5s ease-out forwards;
+}
+
+section.about .active div.stack:nth-child(3n) {
+  animation: fadeInDropDown 1.5s 0.5s ease-out forwards;
+}
+
+section.about img.tech-icon {
+  max-height: 48px;
+  width: 48px;
+  height: auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+section.about .tech-label {
+  text-align: center;
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@keyframes fadeInDropDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  section.about p {
+    font-size: 1rem;
+  }
+
+  section.about > div {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+  }
+}

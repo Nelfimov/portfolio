@@ -1,0 +1,92 @@
+{
+  "general": {
+    "menu": "/assets/icons/menu.svg",
+    "github": "/assets/icons/github.svg"
+  },
+  "tech": {
+    "html": {
+      "label": "HTML",
+      "src": "/assets/icons/html.svg"
+    },
+    "css": {
+      "label": "CSS",
+      "src": "/assets/icons/css.svg"
+    },
+    "typescript": {
+      "label": "Typescript",
+      "src": "/assets/icons/typescript.svg"
+    },
+    "javascript": {
+      "label": "Javascript",
+      "src": "/assets/icons/js.svg"
+    },
+    "react": {
+      "label": "React",
+      "src": "/assets/icons/react.svg"
+    },
+    "mongodb": {
+      "label": "MongoDB",
+      "src": "/assets/icons/mongodb.svg"
+    },
+    "nextjs": {
+      "label": "NextJS",
+      "src": "/assets/icons/nextjs.svg"
+    },
+    "jest": {
+      "label": "Jest",
+      "src": "/assets/icons/jest.svg"
+    },
+    "firebase": {
+      "label": "Firebase",
+      "src": "/assets/icons/firebase.svg"
+    },
+    "node": {
+      "label": "Node.js",
+      "src": "/assets/icons/nodejs.svg"
+    },
+    "npm": {
+      "label": "npm",
+      "src": "/assets/icons/npm.svg"
+    },
+    "eslint": {
+      "label": "ESLint",
+      "src": "/assets/icons/eslint.svg"
+    },
+    "django": {
+      "label": "Django",
+      "src": "/assets/icons/django.svg"
+    },
+    "drf": {
+      "label": "Django Rest",
+      "src": "/assets/icons/drf.png"
+    },
+    "python": {
+      "label": "Python",
+      "src": "/assets/icons/python.svg"
+    },
+    "nginx": {
+      "label": "Nginx",
+      "src": "/assets/icons/nginx.svg"
+    },
+    "sqlite": {
+      "label": "SQLite",
+      "src": "/assets/icons/sqlite.svg"
+    },
+    "bootstrap": {
+      "label": "Bootstrap",
+      "src": "/assets/icons/bootstrap.svg"
+    },
+    "vite": {
+      "label": "Vite",
+      "src": "/assets/icons/vite.svg"
+    },
+    "webpack": {
+      "label": "Webpack",
+      "src": "/assets/icons/webpack.svg"
+    },
+    "git": {
+      "label": "Git",
+      "src": "/assets/icons/git.svg"
+    }
+  }
+}

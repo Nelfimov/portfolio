@@ -1,0 +1,140 @@
+header {
+  padding: .5rem 1rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 70rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 7;
+  transition: color .5s, background-color .5s, filter .5s;
+}
+
+div.overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s;
+}
+
+header>span {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+header.scrolled {
+  color: rgb(222, 222, 222);
+  background-color: rgb(36, 36, 36);
+}
+
+header img {
+  width: 24px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header.scrolled img {
+  filter: invert();
+}
+
+header a,
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:visited,
+nav a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav.links {
+  display: flex;
+}
+
+header nav.links a {
+  padding: 5px;
+}
+
+header a.active,
+nav a.active,
+nav a:hover,
+header a:hover {
+  background-color: grey;
+}
+
+header .menu-button,
+nav.menu {
+  visibility: hidden;
+  display: none;
+}
+
+
+@media (max-width: 500px) {
+  header nav.links {
+    display: none;
+    visibility: hidden;
+  }
+
+  header div.menu-button {
+    display: flex;
+    visibility: visible;
+  }
+
+  header div.menu-button img {
+    align-self: center;
+  }
+
+  nav.menu {
+    opacity: 0;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    position: fixed;
+    width: 100%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transition: all .5s ease-in-out, opacity .5s .2s;
+    background-color: rgba(36, 36, 36);
+    padding: 0;
+    margin: 0;
+    z-index: 6;
+  }
+
+  nav.menu.active {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    visibility: visible;
+    flex-flow: column nowrap;
+  }
+
+  nav.menu.active+div.overlay {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    visibility: visible;
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    z-index: 5;
+    left: 0;
+  }
+
+  nav.menu li {
+    color: white;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+  }
+}

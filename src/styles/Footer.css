@@ -1,0 +1,24 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+footer a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+footer img {
+  filter: invert();
+  width: 48px;
+}

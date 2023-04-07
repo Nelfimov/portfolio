@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "Ecommerce shop",
+    "src": "/assets/projects/ecommerce.png",
+    "href": "http://217.25.237.151/",
+    "stack": "django python drf javascript sqlite html css"
+  },
+  {
+    "id": "2",
+    "name": "Ecommerce shop 2",
+    "src": "/assets/projects/ecommerce2.png",
+    "href": "https://github.com/Nelfimov/eshop-2.0-react",
+    "stack": "typescript mongodb"
+  },
+  {
+    "id": "3",
+    "name": "Where is Waldo game",
+    "src": "/assets/projects/waldo.png",
+    "href": "https://nelfimov.github.io/odin-phototaggingapp/",
+    "stack": "react firebase html css"
+  },
+  {
+    "id": "4",
+    "name": "Battleship game",
+    "src": "/assets/projects/battleship.png",
+    "href": "https://nelfimov.github.io/odin-battleship/",
+    "stack": "javascript html css webpack"
+  },
+  {
+    "id": "5",
+    "name": "Todo app",
+    "src": "/assets/projects/todo.png",
+    "href": "https://nelfimov.github.io/odin-todoapp/",
+    "stack": "javascript html css webpack"
+  },
+  {
+    "id": "6",
+    "name": "Memory card game",
+    "src": "/assets/projects/memory.png",
+    "href": "https://nelfimov.github.io/odin-memory-card/",
+    "stack": "react html css"
+  },
+  {
+    "id": "7",
+    "name": "Tic-tac-toe game",
+    "src": "/assets/projects/tictactoe.png",
+    "href": "https://nelfimov.github.io/odin-tictactoe/",
+    "stack": "javascript html css"
+  }
+]
