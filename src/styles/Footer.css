@@ -7,6 +7,7 @@ footer {
 
 footer .container {
   margin-inline: auto;
+  padding: 10px 0;
 }
 
 footer a {
