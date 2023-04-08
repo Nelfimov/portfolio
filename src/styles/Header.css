@@ -1,5 +1,5 @@
 header {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -7,22 +7,25 @@ header {
   box-sizing: border-box;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 70rem;
-  margin-inline: auto;
+  z-index: 7;
+  transition: color 0.5s, background-color 0.5s, filter 0.5s;
+}
+
+header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 7;
-  transition: color .5s, background-color .5s, filter .5s;
+  max-width: 70rem;
+  margin-inline: auto;
 }
 
 div.overlay {
   visibility: hidden;
   opacity: 0;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-header>span {
+header .container span {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -80,7 +83,6 @@ nav.menu {
   display: none;
 }
 
-
 @media (max-width: 500px) {
   header nav.links {
     display: none;
@@ -106,7 +108,7 @@ nav.menu {
     top: 5%;
     left: 50%;
     transform: translate(-50%, -100%);
-    transition: all .5s ease-in-out, opacity .5s .2s;
+    transition: all 0.5s ease-in-out, opacity 0.5s 0.2s;
     background-color: rgba(36, 36, 36);
     padding: 0;
     margin: 0;
@@ -120,7 +122,7 @@ nav.menu {
     flex-flow: column nowrap;
   }
 
-  nav.menu.active+div.overlay {
+  nav.menu.active + div.overlay {
     background-color: rgb(0, 0, 0);
     opacity: 0.7;
     visibility: visible;

@@ -68,24 +68,26 @@ const Header = () => {
   return (
     <>
       <header ref={headerRef}>
-        <span>
-          <a href="/" aria-label="home">
-            My portfolio
-          </a>
-        </span>
-        <nav className="links">
-          {NAV_LINKS.map((item, index) => (
-            <a key={index} href={item.href} aria-label={item.text}>
-              {item.text}
+        <div className="container">
+          <span>
+            <a href="/" aria-label="home">
+              My portfolio
             </a>
-          ))}
-        </nav>
-        <div className="menu-button">
-          <img
-            src={`${ICONS_LIST.general.menu}`}
-            alt="menu"
-            onClick={handleClick}
-          />
+          </span>
+          <nav className="links">
+            {NAV_LINKS.map((item, index) => (
+              <a key={index} href={item.href} aria-label={item.text}>
+                {item.text}
+              </a>
+            ))}
+          </nav>
+          <div className="menu-button">
+            <img
+              src={`${ICONS_LIST.general.menu}`}
+              alt="menu"
+              onClick={handleClick}
+            />
+          </div>
         </div>
       </header>
       <nav className="menu" ref={menuRef}>
