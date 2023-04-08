@@ -1,15 +1,14 @@
 body {
-  margin: 0 1rem;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   align-content: center;
-  transition: background-color .7s, color .7s;
+  transition: background-color 0.7s, color 0.7s;
   color: rgb(42, 42, 42);
 }
-
 
 body.dark {
   background-color: rgb(32, 32, 32);

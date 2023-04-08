@@ -107,6 +107,7 @@ section.projects .card > a > img {
     grid-auto-flow: row;
     gap: 20px;
     height: 100%;
+    max-height: none;
   }
 
   section.projects div.card-container div.card {
