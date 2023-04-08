@@ -66,7 +66,12 @@ const About = () => {
                 alt={ICONS_LIST['tech'][item].label}
                 className="tech-icon"
               />
-              <p className="tech-label">{ICONS_LIST['tech'][item].label}</p>
+              <p className="tech-label">
+                {
+                  //@ts-expect-error: ignore
+                  ICONS_LIST['tech'][item].label
+                }
+              </p>
             </div>
           ))}
         </div>

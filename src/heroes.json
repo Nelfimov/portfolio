@@ -1,6 +1,6 @@
 {
-  "400": "/assets/hero/hero_400.jpg",
-  "400_low": "/assets/hero/hero_400_low.jpg",
-  "800": "/assets/hero/hero_800.jpg",
-  "800_low": "/assets/hero/hero_800_low.jpg"
+  "400": "/portfolio/assets/hero/hero_400.jpg",
+  "400_low": "/portfolio/assets/hero/hero_400_low.jpg",
+  "800": "/portfolio/assets/hero/hero_800.jpg",
+  "800_low": "/portfolio/assets/hero/hero_800_low.jpg"
 }
