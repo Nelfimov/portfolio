@@ -19,7 +19,7 @@ section.projects h1 {
 section.projects .card-container {
   position: relative;
   display: grid;
-  height: 70vh;
+  height: 110vh;
   place-items: start center;
   top: 10%;
 }
@@ -75,7 +75,7 @@ section.projects .card > a > img {
   }
 
   section.projects:hover .card:nth-child(2) {
-    transform: translateX(-100%) rotate(-12deg);
+    transform: translateX(-100%) translateY(-10%) rotate(-5deg);
   }
 
   section.projects:hover .card:nth-child(3) {
@@ -92,6 +92,10 @@ section.projects .card > a > img {
 
   section.projects:hover .card:nth-child(6) {
     transform: translate(-100%, 100%) rotate(5deg);
+  }
+
+  section.projects:hover .card:nth-child(7) {
+    transform: translate(0, 205%) rotate(-5deg);
   }
 }
 
@@ -131,6 +135,10 @@ section.projects .card > a > img {
 
   section.projects .card:nth-of-type(6) {
     transform: translateX(-100%) rotate(-10deg);
+  }
+
+  section.projects .card:nth-of-type(7) {
+    transform: translateX(-100%) rotate(-5deg);
   }
 
   section.projects .card.active {
