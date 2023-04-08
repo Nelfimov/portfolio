@@ -1,3 +1,7 @@
+section.projects {
+  margin-inline: 1rem;
+}
+
 section.projects .card div.stack {
   display: grid;
   justify-content: center;
