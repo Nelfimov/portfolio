@@ -1,3 +1,7 @@
+section.about {
+  margin-inline: 0.5rem;
+}
+
 section.about > h1 {
   text-align: center;
   font-size: 2rem;
@@ -7,6 +11,10 @@ section.about > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+section.about > div > p {
+  margin-inline: 1rem;
 }
 
 section.about > div > p,
