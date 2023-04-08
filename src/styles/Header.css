@@ -31,6 +31,10 @@ header .container span {
   font-size: 1.3rem;
 }
 
+header .container span a {
+  padding: 5px;
+}
+
 header.scrolled {
   color: rgb(222, 222, 222);
   background-color: rgb(36, 36, 36);

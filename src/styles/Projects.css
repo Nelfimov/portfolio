@@ -80,11 +80,11 @@ section.projects .card > a > img {
   }
 
   section.projects:hover .card:nth-child(2) {
-    transform: translateX(-100%) translateY(-10%) rotate(-5deg);
+    transform: translateX(-100%) translateY(-15%) rotate(-5deg);
   }
 
   section.projects:hover .card:nth-child(3) {
-    transform: translateX(100%) rotate(18deg);
+    transform: translateX(100%) translateY(-3%) rotate(18deg);
   }
 
   section.projects:hover .card:nth-child(4) {

@@ -76,7 +76,7 @@ const Header = () => {
       <header ref={headerRef}>
         <div className="container">
           <span>
-            <a href="/" aria-label="home">
+            <a href="#" aria-label="home">
               My portfolio
             </a>
           </span>

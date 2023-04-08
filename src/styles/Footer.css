@@ -8,20 +8,18 @@ footer {
 footer .container {
   margin-inline: auto;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
-footer a {
-  text-decoration: none;
-  padding: 10px;
+footer .container span {
   color: white;
-}
-
-footer a:visited {
-  text-decoration: none;
-  color: white;
+  font-weight: 500;
+  padding-right: 5px;
 }
 
 footer img {
-  filter: invert();
-  width: 48px;
+  filter: grayscale(100%) invert();
+  -webkit-filter: grayscale(100%) invert();
+  width: 40px;
 }
