@@ -20,6 +20,7 @@ section.projects .card-container {
   position: relative;
   display: grid;
   height: 110vh;
+  max-height: 900px;
   place-items: start center;
   top: 10%;
 }

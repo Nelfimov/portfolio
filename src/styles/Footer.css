@@ -1,9 +1,11 @@
 footer {
   background-color: rgba(0, 0, 0, 0.7);
-  max-width: 70rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+footer .container {
   margin-inline: auto;
 }
 
