@@ -12,7 +12,7 @@ section.projects .card div.stack {
 
 section.projects .card img.tech-icon.small {
   width: 30px;
-  max-height: 30px;
+  height: 30px;
 }
 
 section.projects h1 {

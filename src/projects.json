@@ -4,14 +4,14 @@
     "name": "Ecommerce shop",
     "src": "/assets/projects/ecommerce.png",
     "href": "http://217.25.237.151/",
-    "stack": "django python drf javascript sqlite html css"
+    "stack": "django python javascript sqlite html css"
   },
   {
     "id": "2",
     "name": "Ecommerce shop 2",
     "src": "/assets/projects/ecommerce2.png",
     "href": "https://github.com/Nelfimov/eshop-2.0-react",
-    "stack": "typescript mongodb"
+    "stack": "nextjs typescript express node mongodb html css"
   },
   {
     "id": "3",
@@ -25,14 +25,14 @@
     "name": "Battleship game",
     "src": "/assets/projects/battleship.png",
     "href": "https://nelfimov.github.io/odin-battleship/",
-    "stack": "javascript html css webpack"
+    "stack": "javascript html css"
   },
   {
     "id": "5",
     "name": "Todo app",
     "src": "/assets/projects/todo.png",
     "href": "https://nelfimov.github.io/odin-todoapp/",
-    "stack": "javascript html css webpack"
+    "stack": "javascript html css"
   },
   {
     "id": "6",

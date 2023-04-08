@@ -32,13 +32,9 @@
       "label": "NextJS",
       "src": "/assets/icons/nextjs.svg"
     },
-    "jest": {
-      "label": "Jest",
-      "src": "/assets/icons/jest.svg"
-    },
-    "firebase": {
-      "label": "Firebase",
-      "src": "/assets/icons/firebase.svg"
+    "express": {
+      "label": "Express",
+      "src": "/assets/icons/express.svg"
     },
     "node": {
       "label": "Node.js",
@@ -52,13 +48,17 @@
       "label": "ESLint",
       "src": "/assets/icons/eslint.svg"
     },
+    "jest": {
+      "label": "Jest",
+      "src": "/assets/icons/jest.svg"
+    },
+    "firebase": {
+      "label": "Firebase",
+      "src": "/assets/icons/firebase.svg"
+    },
     "django": {
       "label": "Django",
       "src": "/assets/icons/django.svg"
-    },
-    "drf": {
-      "label": "Django Rest",
-      "src": "/assets/icons/drf.png"
     },
     "python": {
       "label": "Python",

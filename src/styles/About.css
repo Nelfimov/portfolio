@@ -53,9 +53,8 @@ section.about .active div.stack:nth-child(3n) {
 }
 
 section.about img.tech-icon {
-  max-height: 48px;
   width: 48px;
-  height: auto;
+  height: 48px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
