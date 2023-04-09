@@ -57,19 +57,19 @@ const About = () => {
           new things with it!
         </p>
         <div className="tech">
-          {Object.keys(ICONS_LIST['tech']).map((item, index) => (
+          {Object.keys(ICONS_LIST.tech).map((item, index) => (
             <div className="stack" key={index}>
               <img
                 //@ts-expect-error: ignore
-                src={ICONS_LIST['tech'][item].src}
+                src={import.meta.env.BASE_URL + ICONS_LIST.tech[item].src}
                 //@ts-expect-error: ignore
-                alt={ICONS_LIST['tech'][item].label}
+                alt={ICONS_LIST.tech[item].label}
                 className="tech-icon"
               />
               <p className="tech-label">
                 {
                   //@ts-expect-error: ignore
-                  ICONS_LIST['tech'][item].label
+                  ICONS_LIST.tech[item].label
                 }
               </p>
             </div>

@@ -37,14 +37,17 @@ const Projects = () => {
         {PROJECT_LIST.map((project) => (
           <div className="card" key={project.id}>
             <a href={project.href}>
-              <img src={project.src} alt={project.name} />
+              <img
+                src={import.meta.env.BASE_URL + project.src}
+                alt={project.name}
+              />
               <h3>{project.name}</h3>
               <div className="stack">
                 {project.stack.split(' ').map((item) => (
                   <img
                     key={item}
                     //@ts-expect-error: ignore
-                    src={ICONS_LIST.tech[item].src}
+                    src={import.meta.env.BASE_URL + ICONS_LIST.tech[item].src}
                     alt={item}
                     className="tech-icon small"
                   />

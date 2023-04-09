@@ -1,92 +1,92 @@
 {
   "general": {
-    "menu": "/portfolio/assets/icons/menu.svg",
-    "github": "/portfolio/assets/icons/github.svg"
+    "menu": "/assets/icons/menu.svg",
+    "github": "/assets/icons/github.svg"
   },
   "tech": {
     "html": {
       "label": "HTML",
-      "src": "/portfolio/assets/icons/html.svg"
+      "src": "/assets/icons/html.svg"
     },
     "css": {
       "label": "CSS",
-      "src": "/portfolio/assets/icons/css.svg"
+      "src": "/assets/icons/css.svg"
     },
     "typescript": {
       "label": "Typescript",
-      "src": "/portfolio/assets/icons/typescript.svg"
+      "src": "/assets/icons/typescript.svg"
     },
     "javascript": {
       "label": "Javascript",
-      "src": "/portfolio/assets/icons/js.svg"
+      "src": "/assets/icons/js.svg"
     },
     "react": {
       "label": "React",
-      "src": "/portfolio/assets/icons/react.svg"
+      "src": "/assets/icons/react.svg"
     },
     "mongodb": {
       "label": "MongoDB",
-      "src": "/portfolio/assets/icons/mongodb.svg"
+      "src": "/assets/icons/mongodb.svg"
     },
     "nextjs": {
       "label": "NextJS",
-      "src": "/portfolio/assets/icons/nextjs.svg"
+      "src": "/assets/icons/nextjs.svg"
     },
     "express": {
       "label": "Express",
-      "src": "/portfolio/assets/icons/express.svg"
+      "src": "/assets/icons/express.svg"
     },
     "node": {
       "label": "Node.js",
-      "src": "/portfolio/assets/icons/nodejs.svg"
+      "src": "/assets/icons/nodejs.svg"
     },
     "npm": {
       "label": "npm",
-      "src": "/portfolio/assets/icons/npm.svg"
+      "src": "/assets/icons/npm.svg"
     },
     "eslint": {
       "label": "ESLint",
-      "src": "/portfolio/assets/icons/eslint.svg"
+      "src": "/assets/icons/eslint.svg"
     },
     "jest": {
       "label": "Jest",
-      "src": "/portfolio/assets/icons/jest.svg"
+      "src": "/assets/icons/jest.svg"
     },
     "firebase": {
       "label": "Firebase",
-      "src": "/portfolio/assets/icons/firebase.svg"
+      "src": "/assets/icons/firebase.svg"
     },
     "django": {
       "label": "Django",
-      "src": "/portfolio/assets/icons/django.svg"
+      "src": "/assets/icons/django.svg"
     },
     "python": {
       "label": "Python",
-      "src": "/portfolio/assets/icons/python.svg"
+      "src": "/assets/icons/python.svg"
     },
     "nginx": {
       "label": "Nginx",
-      "src": "/portfolio/assets/icons/nginx.svg"
+      "src": "/assets/icons/nginx.svg"
     },
     "sqlite": {
       "label": "SQLite",
-      "src": "/portfolio/assets/icons/sqlite.svg"
+      "src": "/assets/icons/sqlite.svg"
     },
     "bootstrap": {
       "label": "Bootstrap",
-      "src": "/portfolio/assets/icons/bootstrap.svg"
+      "src": "/assets/icons/bootstrap.svg"
     },
     "vite": {
       "label": "Vite",
-      "src": "/portfolio/assets/icons/vite.svg"
+      "src": "/assets/icons/vite.svg"
     },
     "webpack": {
       "label": "Webpack",
-      "src": "/portfolio/assets/icons/webpack.svg"
+      "src": "/assets/icons/webpack.svg"
     },
     "git": {
       "label": "Git",
-      "src": "/portfolio/assets/icons/git.svg"
+      "src": "/assets/icons/git.svg"
     }
   }
 }
