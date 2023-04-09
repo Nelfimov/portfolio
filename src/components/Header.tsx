@@ -37,22 +37,21 @@ const Header = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log(entry.target);
             const anchor = document.querySelector(
-              `nav.links a[href*=${entry.target.classList[0]}]`,
+              `nav.links a[href*=${entry.target.id}]`,
             );
             if (anchor) anchor.classList.add('active');
             const menuItem = document.querySelector(
-              `nav.menu a[href*=${entry.target.classList[0]}]`,
+              `nav.menu a[href*=${entry.target.id}]`,
             );
             if (menuItem) menuItem.classList.add('active');
           } else {
             const anchor = document.querySelector(
-              `nav.links a[href*=${entry.target.classList[0]}]`,
+              `nav.links a[href*=${entry.target.id}]`,
             );
             if (anchor) anchor.classList.remove('active');
             const menuItem = document.querySelector(
-              `nav.menu a[href*=${entry.target.classList[0]}]`,
+              `nav.menu a[href*=${entry.target.id}]`,
             );
             if (menuItem) menuItem.classList.remove('active');
           }
@@ -60,12 +59,11 @@ const Header = () => {
       },
       {
         rootMargin: '-200px 0px',
-        threshold: 0.5,
+        threshold: 1,
       },
     );
 
-    const anchors = document.querySelectorAll('section');
-    console.log(anchors);
+    const anchors = document.querySelectorAll('a.nav-link');
     anchors.forEach((anchor) => observer.observe(anchor));
 
     window.addEventListener('scroll', handleScroll);

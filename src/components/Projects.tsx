@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <section className="projects">
-      <a className="anchor" id="projects"></a>
+      <a className="nav-link" id="projects"></a>
       <h1>My projects</h1>
       <div className="card-container" ref={cardContainer}>
         {PROJECT_LIST.map((project) => (

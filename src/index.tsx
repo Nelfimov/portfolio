@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './components/App';
+import App from './pages/App';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -11,5 +11,5 @@ root.render(
     <Header />
     <App />
     <Footer />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

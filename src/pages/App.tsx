@@ -1,6 +1,6 @@
-import Hero from './Hero';
-import About from './About';
-import Projects from './Projects';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Projects from '../components/Projects';
 import '../styles/App.css';
 
 const App = () => {

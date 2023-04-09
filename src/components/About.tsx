@@ -32,7 +32,7 @@ const About = () => {
 
   return (
     <section className="about">
-      <a className="anchor" id="about"></a>
+      <a className="nav-link" id="about"></a>
       <h1>About me</h1>
       <div ref={divRef}>
         <p>
