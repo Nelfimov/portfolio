@@ -10,7 +10,7 @@
     "id": "2",
     "name": "Ecommerce shop 2",
     "src": "/assets/projects/ecommerce2.png",
-    "href": "https://github.com/Nelfimov/eshop-2.0-react",
+    "href": "https://github.com/Nelfimov/eshop-fullstack",
     "stack": "nextjs typescript express node mongodb bootstrap html css"
   },
   {
