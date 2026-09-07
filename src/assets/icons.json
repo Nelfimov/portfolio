@@ -13,6 +13,10 @@
         "label": "Typescript",
         "src": "/assets/icons/typescript.svg"
       },
+      "ruby": {
+        "label": "Ruby",
+        "src": "/assets/icons/ruby.svg"
+      },
       "react": {
         "label": "React",
         "src": "/assets/icons/react.svg"
@@ -96,10 +100,6 @@
       "ghostty": {
         "label": "Ghostty",
         "src": "/assets/icons/ghostty.svg"
-      },
-      "zellij": {
-        "label": "Zellij",
-        "src": "/assets/icons/zellij.svg"
       },
       "obsidian": {
         "label": "Obsidian",
